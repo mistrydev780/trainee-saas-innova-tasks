@@ -1,0 +1,35 @@
+body {
+    font-family: "poppins";
+}
+
+h1 {
+
+    color: red;
+
+    background-color: yellow;
+
+    font-size: 40px;
+
+    font-family: Arial;
+
+    text-align: center;
+
+}
+
+p {
+
+    color: blue;
+
+    font-size: 20px;
+
+    line-height: 35px;
+
+}
+
+a {
+
+    text-decoration: none;
+
+    color: green;
+
+}
