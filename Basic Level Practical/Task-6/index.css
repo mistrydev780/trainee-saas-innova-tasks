@@ -1,0 +1,22 @@
+body{
+    background-color: wheat;
+}
+
+.container{
+    width: 300px;
+    height: 200px;
+    background-image: url(images/nature.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h2{
+    color: red;
+}
+
+p{
+    color: yellow;
+}

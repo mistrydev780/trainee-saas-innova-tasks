@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgb(142, 206, 236);
+}
+
+.logo {
+    color: white;
+}
+
+ul { 
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: .3s;
+}
+
+a:hover {
+    color: blue;
+    transition-duration: 3s;
+}
