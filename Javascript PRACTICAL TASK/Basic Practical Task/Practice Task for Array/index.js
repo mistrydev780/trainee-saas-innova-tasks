@@ -10,28 +10,7 @@ let searchBtn = document.getElementById("searchBtn")
 let recipeList = document.getElementById("recipeList")
 
 
-function displayRecipes(data = recipes) {
 
-    recipeList.innerHTML = "";
-
-    data.forEach(function (recipe) {
-
-        recipeList.innerHTML += `
-            <div>
-                <h3>${recipe.name}</h3>
-                <p>Category : ${recipe.category}</p>
-                <p>Ingredient : ${recipe.ingredient}</p>
-
-                <button onclick="editRecipe(${recipe.id})">Edit</button>
-                <button onclick="deleteRecipe(${recipe.id})">Delete</button>
-
-                <hr>
-            </div>
-        `;
-
-    });
-
-}
 
 function saveLocalStorage() {
     localStorage.setItem("recipes", JSON.stringify(recipes));
@@ -73,6 +52,28 @@ function editRecipe(id) {
 
     saveLocalStorage();
     displayRecipes();
+}
+
+function displayRecipes(data = recipes) {
+
+    recipeList.innerHTML = "";
+
+    data.forEach(function (recipe) {
+
+        recipeList.innerHTML += `
+            <div>
+                <h3>${recipe.name}</h3>
+                <p>Category : ${recipe.category}</p>
+                <p>Ingredient : ${recipe.ingredient}</p>
+                <button onclick="editRecipe(${recipe.id})">Edit</button>
+                <button onclick="deleteRecipe(${recipe.id})">Delete</button>
+
+                <hr>
+            </div>
+        `;
+
+    });
+
 }
 
 searchBtn.addEventListener("click", function () {

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h2>Task Manager Application</h2>
+    <p>Add New Task</p>
+
+    <div>
+        <form style="border: 1;">
+
+            <label for="name">Task Name</label>
+            <input type="text" id="task" placeholder="Enter Task Name">
+            <br>
+            <label for="description">Task Description</label>
+            <input type="text" id="description" placeholder="Enter Task Description">
+            <br>
+            <label for="status">Select Status</label>
+            <select id="status">
+                <option value="pending">Pending</option>
+                <option value="completed">Completed</option>
+            </select>
+            <br>
+            <button id="btnAdd">Add Task</button>
+            <!-- <button id="btnEdit">Edit Task</button> -->
+
+        </form>
+        <br><br>
+    </div>
+
+    <div>
+       <table id="table">
+
+       </table> 
+    </div>
+<script src="index.js"></script>
+</body>
+
+</html>

@@ -175,10 +175,23 @@ const prompt = promptSync({ sigint: true });
 // add(10,10)
 
 
-const person = {
-  name: "Dev Mistry",
-  age: 30,
-  city: "Bardoli"
-};
+// const person = {
+//   name: "Dev Mistry",
+//   age: 30,
+//   city: "Bardoli"
+// };
 
-console.log(person.name);
+// console.log(person.name);
+
+
+
+const users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 }
+];
+
+const names = users.map(user => user);
+
+console.log(names); 
+

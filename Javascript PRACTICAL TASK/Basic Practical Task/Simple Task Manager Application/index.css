@@ -1,0 +1,38 @@
+ body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 40px;
+        }
+      
+
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            
+        }
+
+        button {
+            background-color: #7552f1;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
