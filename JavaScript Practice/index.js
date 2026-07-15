@@ -109,7 +109,7 @@ const prompt = promptSync({ sigint: true });
 //         continue;
 //     }
 //     console.log(i);
-    
+
 // }
 
 
@@ -197,21 +197,127 @@ const prompt = promptSync({ sigint: true });
 
 
 
+//Class and Object
+// class student {
+//     dev(){
+//       console.log("Dev Going to collage")
+//     }
+// }
+
+// let obj = new student()
+// obj.dev()
+
+
+
+//Constructor
+// class student {
+
+//   constructor(name,age){
+//     console.log(`Student ${name} is going to Collage Age is ${age}`);
+//   } 
+// }
+
+// const obj = new student("Dev",20)
+
+
+
+//Inheritance
+// class Animal {
+//   sound() {
+//     console.log("Animal Makes a Sound")
+//   }
+// }
+
+// class Dog extends Animal {
+//   bark() {
+//     console.log("Dog barks")
+//   }
+// }
+// const dog = new Dog();
+// dog.sound();
+// dog.bark();
+
+
+
+
+//Encapsulation
+// class student {
+
+//   constructor(name){
+//     console.log(`Studet name is ${name}`);
+//   }
+
+//   display(name){
+
+//     console.log(`student name display by function ${name}`)
+//   }
+
+// }
+
+// const obj = new student("Dev")
+
+// obj.display("dev")
+
+
+
+
+//Polymorphism
+// class Animal{
+//   sound(){
+//      console.log("Animal Class Function Call")
+//   }
+// }
+
+// class Dog extends Animal{
+//   sound(){
+//     console.log("Dog class Function Call")
+//   }
+// }
+
+// const Obj = new Dog();
+
+// Obj.sound();
+
+
+
+//Abstraction
+// class Users {
+
+//     constructor(name,email){
+//       this.name = name;
+//       this.email = email;
+//       console.log(`${name} ${email}`)
+//     }
+
+//     login(){
+//       console.log("Login SucessFull")
+//     }
+// }
+
+// const Obj = new Users("dev","devmistry@gmail.com");
+// Obj.login()
+
+
+
 class Animal {
-  sound(){
+  sound() {
     console.log("Animal Makes a Sound")
   }
 }
 
 class Dog extends Animal {
-  bark(){
+  bark() {
     console.log("Dog barks")
   }
 }
-const dog = new Dog();
-dog.sound();
-dog.bark();
 
+class Cat extends Dog {
+  speak() {
+    console.log("Cat speaking....")
+  }
+}
 
-
-
+const OBJ = new Cat();
+OBJ.sound();
+OBJ.bark();
+OBJ.speak();
