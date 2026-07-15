@@ -185,13 +185,33 @@ const prompt = promptSync({ sigint: true });
 
 
 
-const users = [
-  { name: "Alice", age: 25 },
-  { name: "Bob", age: 30 },
-  { name: "Charlie", age: 35 }
-];
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 35 }
+// ];
 
-const names = users.map(user => user);
+// const names = users.map(user => user);
 
-console.log(names); 
+// console.log(names); 
+
+
+
+class Animal {
+  sound(){
+    console.log("Animal Makes a Sound")
+  }
+}
+
+class Dog extends Animal {
+  bark(){
+    console.log("Dog barks")
+  }
+}
+const dog = new Dog();
+dog.sound();
+dog.bark();
+
+
+
 
