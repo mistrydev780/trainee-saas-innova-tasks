@@ -20,11 +20,11 @@ function displayTasks() {
 
     let table = `
     <tr>
-        <th>Task Id</th>
+        <th>Task Id</th>            
         <th>Task Name</th>
-        <th>Task Description</th>
-        <th>Status</th>
-        <th>Action</th>
+        <th>Task Description</th>       
+        <th>Status</th>                     
+        <th>Action</th>                  
     </tr>
     `;
 
