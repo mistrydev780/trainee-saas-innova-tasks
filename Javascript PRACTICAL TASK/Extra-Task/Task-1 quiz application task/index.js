@@ -54,7 +54,8 @@ function loadQuestion() {
 
 loadQuestion();
 
-document.getElementById("btnSub").addEventListener("click", function (quizData) {
+
+document.getElementById("btnSub").addEventListener("click", function () {
 
     let answer = document.getElementsByName("answer");
 
@@ -67,9 +68,9 @@ document.getElementById("btnSub").addEventListener("click", function (quizData) 
         }
 
     if (selected == -1) {
-        alert("Please Select Answer")
+        alert("Please Select Answer");
+        return;
     }
-
     if (selected === quizData[currentQuestion].answer) {
         score++;
     }
@@ -83,15 +84,13 @@ document.getElementById("btnSub").addEventListener("click", function (quizData) 
     }
 
     else {
-        document.body.innerHTML = `
-        <h1>Quiz Finished</h1>
-        <h2>Quiz Score : ${score}/${quizData.length}</h2>
-        `
+
+        document.getElementById("question").innerHTML = "Quiz Finished";
+
+        document.getElementById("score").innerHTML =
+            "Your Score : " + score + " / " + quizData.length;
+
     }
     loadQuestion();
 
 })
-
-
-loadQuestion();
-
