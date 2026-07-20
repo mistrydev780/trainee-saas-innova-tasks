@@ -93,5 +93,6 @@ document.getElementById("btnSub").addEventListener("click", function (quizData) 
 })
 
 
+
 loadQuestion();
 
