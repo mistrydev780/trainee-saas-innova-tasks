@@ -1,0 +1,41 @@
+
+
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+  
+    align-items: center;
+}
+
+#container {
+
+    margin: 50px;
+    padding: 70px;
+    border-radius: 10px;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    background: rgb(131, 131, 233);
+        margin-bottom: 20px;
+    height: 50px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+button {
+    width: 10%;
+    height: 45px;
+    margin-top: 20px;
+    padding: 12px;
+    background: rgb(10, 112, 10);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
